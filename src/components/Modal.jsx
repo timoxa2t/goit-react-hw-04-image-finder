@@ -1,4 +1,5 @@
 import styles from '../css/Modal.module.css'
+import PropTypes from "prop-types"
 
 export default function Modal({largeImg, onClick}){
     
@@ -9,4 +10,9 @@ export default function Modal({largeImg, onClick}){
             </div>
         </div>
     )
+}
+
+Modal.propTypes = {
+    largeImg: PropTypes.string, 
+    onClick: PropTypes.func
 }

@@ -1,5 +1,6 @@
 
 import styles from "../css/ImageGalleryItem.module.css"
+import PropTypes from "prop-types"
 
 export default function ImageGalleryItem({smallImg, showBigImage, id}){
 
@@ -14,3 +15,9 @@ export default function ImageGalleryItem({smallImg, showBigImage, id}){
     )
 
 } 
+
+ImageGalleryItem.propTypes = {
+    smallImg: PropTypes.string, 
+    showBigImage: PropTypes.func, 
+    id: PropTypes.number
+}
